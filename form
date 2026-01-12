@@ -1,0 +1,141 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My Forms</title>
+    </head>
+    <body>
+        <form>
+            <input type="text" name="fullname" placeholder="กรอกชื่อ-นามสกุล">
+            <input type="email" name="email" placeholder="example@email.com">
+            <input type="password" name="password" minlength="8">
+            <input type="number" name="age" min="1" max="120" step="1">
+            <input type="date" name="birthdate" min="1900-01-01" max="2025-12-31">
+            <input type="color" name="favorite_color" value="#059669">
+            <input type="range" name="satisfaction" min="0" max="10" step="1">
+            <input type="file" name="avatar" accept="image/*">
+
+            <!-- Checkbox - เลือกได้หลายตัว -->
+            <p>ทักษะที่มี:</p>
+            <label>
+                <input type="checkbox" name="skills" value="html"> HTML
+            </label>
+            <label>
+                <input type="checkbox" name="skills" value="css"> CSS
+            </label>
+            <label>
+                <input type="checkbox" name="skills" value="js"> JavaScript
+            </label>
+
+            <!-- Radio Button - เลือกได้ตัวเดียว (name เดียวกัน) -->
+            <p>เพศ:</p>
+            <label>
+                <input type="radio" name="gender" value="male"> ชาย
+            </label>
+            <label>
+                <input type="radio" name="gender" value="female"> หญิง
+            </label>
+            <label>
+                <input type="radio" name="gender" value="other"> อื่นๆ
+            </label><br>
+            <input type="text"
+            id="username"
+            name="username"
+            placeholder="กรอกชื่อผู้ใช้"
+            required
+            autofocus
+            maxlength="20">
+
+            <!-- Input แบบ Disabled -->
+            <input type="text"
+                name="membership"
+                value="Gold Member"
+                disabled>
+
+            <!-- Input แบบ Readonly -->
+            <input type="text"
+                name="user_id"
+                value="USR-001234"
+                readonly><br>
+            <label for="province">จังหวัด:</label>
+            <select id="province" name="province">
+                <option value="">-- กรุณาเลือก --</option>
+                <option value="bkk">กรุงเทพมหานคร</option>
+                <option value="nkp">นครปฐม</option>
+                <option value="cm">เชียงใหม่</option>
+            </select>
+
+            <!-- Dropdown พร้อม Option Groups -->
+            <label for="car">รถยนต์:</label>
+            <select id="car" name="car">
+                <optgroup label="รถญี่ปุ่น">
+                    <option value="toyota">Toyota</option>
+                    <option value="honda">Honda</option>
+                </optgroup>
+                <optgroup label="รถเยอรมัน">
+                    <option value="bmw">BMW</option>
+                    <option value="mercedes">Mercedes</option>
+                </optgroup>
+            </select>
+
+            <!-- Multiple Selection -->
+            <label for="skills">ทักษะ (เลือกได้หลายรายการ):</label>
+            <select id="skills" name="skills" multiple size="4">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+                <option value="python">Python</option>
+            </select>
+
+            <label for="message">ข้อความ:</label>
+            <textarea id="message"
+            name="message"
+            rows="5"
+            cols="40"
+            placeholder="พิมพ์ข้อความของคุณที่นี่..."
+            maxlength="500"></textarea>
+
+            <!-- ปุ่ม Submit - ส่งข้อมูล Form -->
+            <button type="submit">ส่งข้อมูล</button>
+
+            <!-- ปุ่ม Reset - ล้างข้อมูลในฟอร์ม -->
+            <button type="reset">ล้างข้อมูล</button>
+
+            <!-- ปุ่มทั่วไป - ไม่ทำอะไรโดยอัตโนมัติ -->
+            <button type="button">คลิกฉัน</button>
+
+            <!-- Input แบบ Submit (วิธีเก่า) -->
+            <input type="submit" value="ส่งข้อมูล">
+
+            <!-- ปุ่มพร้อม Icon -->
+            <button type="submit">
+                <span>📤</span> ส่งข้อมูล
+            </button>
+
+            <label for="browser">เลือก Browser:</label>
+            <input list="browsers" id="browser" name="browser">
+
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Safari">
+                <option value="Edge">
+                <option value="Opera">
+            </datalist>
+
+            <form>
+            <fieldset>
+                <legend>ข้อมูลส่วนตัว</legend>
+                <label>ชื่อ: <input type="text" name="firstname"></label>
+                <label>นามสกุล: <input type="text" name="lastname"></label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>ข้อมูลติดต่อ</legend>
+                <label>อีเมล: <input type="email" name="email"></label>
+                <label>โทรศัพท์: <input type="tel" name="phone"></label>
+            </fieldset>
+        </form>
+        </form>
+    </body>
+ </html>
