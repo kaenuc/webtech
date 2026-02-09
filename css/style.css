@@ -1,0 +1,90 @@
+
+body {
+    font-family: "Playwrite NZ Basic", cursive;
+    background-color: #e4ffec;
+}
+.site-header {
+    background-color: #166534;
+    color: white;
+    padding: 1rem 2rem;
+}
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.main-nav a {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+.main-nav a:hover {
+    color: white;
+}
+
+/* ── Hero ── */
+.hero-section {
+    background: linear-gradient(135deg, #15803d, #22c55e);
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+.hero-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* ── Menu Section ── */
+#menu {
+    background-color: #f0fdf4;
+    padding: 3rem 2rem;
+}
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #166534;
+    text-align: center;
+}
+
+/* ── Cards ── */
+.card {
+    background: white;
+    border: 1px solid #dcfce7;
+    border-radius: 12px;
+    padding: 1.5rem;
+}
+.card.featured {
+    border: 2px solid #22c55e;
+}
+.card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1f2937;
+}
+.card-desc {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+.price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #16a34a;
+}
+.badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+.bestseller { background: #fef9c3; color: #854d0e; }
+.new { background: #dcfce7; color: #166534; }
+
+/* ── Footer ── */
+.site-footer {
+    background-color: #14532d;
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+}
