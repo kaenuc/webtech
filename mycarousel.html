@@ -8,6 +8,28 @@
 </head>
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Fixed Button มุมล่างขวา (เช่น ปุ่ม Chat) -->
+    <button class="position-fixed bottom-0 end-0 m-4 btn btn-primary rounded-circle"
+            style="width:56px; height:56px;">
+        <i class="bi bi-chat-fill"></i>
+    </button>
+        <!-- Sticky Header (ค้างอยู่ด้านบนเมื่อ Scroll) -->
+    <div class="position-sticky top-0 bg-white shadow-sm p-3" style="z-index:100;">
+        Sticky Header
+    </div>
+    <!-- Badge ซ้อนบน Icon (Absolute บน Relative) -->
+    <div class="position-relative d-inline-block">
+        <i class="bi bi-bell fs-3"></i>
+        <span class="position-absolute top-0 start-100 translate-middle
+                    badge rounded-pill bg-danger">
+            5
+        </span>
+    </div>
+    <!-- กำหนดตำแหน่ง: top-0, bottom-0, start-0, end-0, translate-middle -->
+    <!-- ใช้ร่วมกับ position-absolute เพื่อวาง element ตามตำแหน่งที่ต้องการ -->
+    
+
+    
     <!-- Carousel พื้นฐาน -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
 
@@ -164,6 +186,26 @@
             ผลงาน (สีเขียว)
         </a>
     </div>   
+    <!-- overflow: auto (Scrollbar เมื่อล้น) -->
+<div class="overflow-auto" style="height:100px;">เนื้อหายาว...</div>
+
+<!-- overflow: hidden (ซ่อนส่วนที่ล้น) -->
+<div class="overflow-hidden">...</div>
+
+<!-- overflow: scroll (แสดง Scrollbar เสมอ) -->
+<div class="overflow-scroll" style="height:100px;">...</div>
+
+<!-- overflow: visible (แสดงส่วนที่ล้นออกมา) -->
+<div class="overflow-visible">...</div>
+
+<!-- Overflow แนวแกนเดียว -->
+<div class="overflow-x-auto">Scroll แนวนอนอย่างเดียว</div>
+<div class="overflow-y-auto">Scroll แนวตั้งอย่างเดียว</div>
+
+<!-- ตัวอย่างจริง: กล่อง Code ที่ Scroll แนวนอนได้ -->
+<pre class="overflow-x-auto p-3 bg-dark text-white rounded">
+    <code>โค้ดยาวมากที่ไม่ตัดบรรทัด...</code>
+</pre>
     
 </body>
 </html>
